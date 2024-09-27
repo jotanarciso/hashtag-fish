@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Product } from '@/types/product'
@@ -29,7 +28,7 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
       <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-12">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 p-8">
-            <Image
+            <img
               src={product.image}
               alt={product.title}
               width={600}

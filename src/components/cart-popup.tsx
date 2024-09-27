@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { useCart } from "@/context/cart-context";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
 
 export function CartPopup() {
@@ -76,7 +75,7 @@ export function CartPopup() {
                     >
                       <div className="flex items-center">
                         {item.image ? (
-                          <Image
+                          <img
                             src={item.image}
                             alt={item.title}
                             width={50}

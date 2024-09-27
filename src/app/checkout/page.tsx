@@ -4,7 +4,6 @@ import { useCart } from "@/context/cart-context";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { loadStripe } from "@stripe/stripe-js";
-import Image from "next/image";
 import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 
@@ -52,7 +51,7 @@ export default function CheckoutPage() {
             {items.map((item) => (
               <div key={item.id} className="flex justify-between items-center border-b pb-4">
                 <div className="flex items-center">
-                  <Image src={item.image} alt={item.title} width={50} height={50} className="mr-4" />
+                  <img src={item.image} alt={item.title} width={50} height={50} className="mr-4" />
                   <span>{item.title}</span>
                 </div>
                 <div>
