@@ -40,7 +40,7 @@ export default function SearchContent() {
       {isLoading ? (
         <p>Carregando...</p>
       ) : filteredProducts.length === 0 ? (
-        <p>Nenhum produto encontrado para sua busca.</p>
+        <p>No products found for your search.</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
